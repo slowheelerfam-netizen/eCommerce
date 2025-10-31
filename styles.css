@@ -66,19 +66,20 @@ header {
     max-width: 720px;
     margin: 0 auto;
     height: 100%;
-    flex-direction: column;
-    justify-content: space space-around;
+    flex-direction: column; 
+    justify-content: space-around;
 }
 .header__description {
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 24px;
+     /* margin: 50px 10px 0 10px; */
 }
 h1 {
     font-size: 56px;
-    color: #242424
-    margin-bottom:  24px;
+    color: #242424;
+    margin-bottom: 24px;
+    /* margin: 0px 50px 0px 50px; */
     text-align: center;
 }
 h2 {
