@@ -19,7 +19,7 @@ nav {
 img {
     width: 100%;
     height: auto;
-    max-height: 90vh;
+    max-height: 100vh;
     
 }
 
@@ -99,8 +99,8 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-size: 32px;
-    margin-bottom: 32px;
+    font-size: 48px;
+    /* margin-bottom: 32px; */
     text-align: center;
 }
 Button {
@@ -119,7 +119,7 @@ button:active {
     border: none;
 }
 .header__img--wrapper {
-    padding: 20px;
+    padding: 8px;
     z-index: 50;
 }
 .container {
@@ -149,7 +149,7 @@ button:active {
     position: absolute;
     width: 101vw;
     height: 18vw;
-    /* top: 1px; */
+    /* top: 20px; */
     left: 0;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -158,13 +158,13 @@ button:active {
 }
 
  #highlights:before {
-    bottom: 130px;
+    
     Transform: translateY(-100%);
 } 
 
 #highlights:after {
-    bottom: 1px;
-    Transform: translateY(100%) rotate(180deg);
+    bottom: 1vw;
+    Transform: translateY(70%) rotate(180deg);
     z-index: 1;
 } 
 
@@ -174,7 +174,7 @@ button:active {
 }
 
 .highlight {
-    padding: 0 0px 0px;
+    padding: 24px;
     width: calc(100% / 3);
     display: flex;
     align-items: center;
@@ -206,30 +206,99 @@ button:active {
 
 /* 
 
-FEATURES
+FEATURED/Latest Books
 
 */
 
-#features {
-    padding-top: 175px;
-    background-color: rgba(115, 66, 214, 0.1);  
+#featured {
+    padding: 8vw;
+    height: 650px;
+    background-color: rgba(115, 66, 214, 0.1); 
 } 
+#latest__books {
+    margin-top: 8vw;
+    
+} 
+#featured,
+#latest__books,
+#latest__books1 {
+    
 
 .books {
     display: flex;
 }
+
+.book {
+    width: 25%;
+    padding: 24px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 .book__img {
     max-height: 300px;
+    transition: all 300ms ease;
+    cursor: not-allowed;  /* This makes it obvious that the coding was built so that the book 
+                        is seen "not to be clicked on" can use "no-drop" as well*/
 } 
 
+.book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;   /* This removes any gap between the image and the container it is in */
+}
+
+.book:hover .book__img {
+    transform: scale(1.03);
+}
+
+.book__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.book__title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.book__ratings {
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+
+.book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+}
+}
+
+
+
+
+
 /* SMALL PHONES, LARGE SMARTPHONES */
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .btn__menu {
     display: block;
   }
 
-
-/* #highlights:before,
+.header__img--wrapper {
+    padding: 50px;
+}
+h1, h2 {
+    margin-top: 0;
+}
+}
+#highlights:before {
+    Transform: translateY(-100%);
+}
+#highlights:before,
 #highlights:after {
-    padding-top: 300px;
-} */
+overflow-y: hidden;
+}
+
