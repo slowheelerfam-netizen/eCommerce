@@ -214,11 +214,11 @@ FEATURED/Latest Books
 
 #featured__books {
     padding: 12vw;
-    height: 675px;
+    height: 50vh;
     background-color: rgba(115, 66, 214, 0.1); 
 } 
 #latest__books {
-    margin-top: 4vw;
+    margin-top: 4vh;
     
 } 
 #featured__books,
