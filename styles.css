@@ -231,13 +231,16 @@ FEATURED/Latest Books
 }
 
 .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 25%;
     padding: 24px;
 }
-.center {
+/* .center {
     display: flex;
     justify-content: center;
-}
+} */
 
 .book__img {
     width: 100%;
