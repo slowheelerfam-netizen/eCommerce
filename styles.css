@@ -112,7 +112,7 @@ button:active {
 .btn {
     background-color: #28aeec;
     color: white;
-    padding: 12px 24px;
+    padding: 12px 24px ;
     font-size: 20px;
     border-radius: 4px;
     border: none;
